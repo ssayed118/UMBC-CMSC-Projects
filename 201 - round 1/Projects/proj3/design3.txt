@@ -1,0 +1,85 @@
+""" 
+File:    proj3.py
+Author:  Sumaa Sayed
+Date:    11/29/2019
+Section: 16
+E-mail:  ssayed1@umbc.edu
+Description: This program will allow a user to score a game, called Go.
+"""
+# remember to use 2d lists!!!
+# parameters are definitly inaccurate, but i'm pretty sure i need them
+
+BLACK_PIECE = X
+WHITE_PIECE = O
+PIECE = +
+
+def color_board(spot_in_board) 
+    """
+    This function will color the board, recursively.
+    param spot_in_board: the location of the piece that the program is looking at
+    return: either a black piece or white piece
+    """
+    #spot_in_board is the spot the program is looking at... probably should be a 2d list, but needs to be interchangeable for every board 
+    if spot_in_board[0] ==  BLACK_PIECE or spot_in_board[0] == WHITE_PIECE
+       
+    else:
+    # while there are "blank spots", either count or just keep going until you hit a piece,
+    # then, go back and fill the spots with the piece that you "hit"
+      print("X" or "O")
+      
+def clear_space(spot_in_board, input_board)
+    """
+    This function will close the "gaps" in the board.
+    param spot_in_board: the location of the piece that the program is looking at
+    param input_board: board that will be used for the game, inputted by the user
+    return: none
+    """
+    #split and then clear the spaces
+    spot_in_board.split()
+    #should have something in the parenthesis or here
+    spot_in_board.join()
+    
+def counting_total(spot_in_board, input_board)
+    """
+    This function will count the total amount of black and white pieces.
+    param input_board: board that will be used for the game, inputted by the user
+    param spot_in_board: the location of the piece that the program is looking at
+    return: values for each colors pieces..? (hope this makes sense)
+    """
+#    num_X ~ number of black pieces
+#    num_O ~ number of white pieces
+# should these be parameters too?^
+
+     for BLACK_PIECE in board:
+     	 num_x += 1
+	 print(num_x)
+     for WHITE_PIECE in board:
+     	 num_o += 1
+	 print(num_o)
+	 
+def display_score(num_x, num_o)
+    """"
+    This function will display the score, and declare the winner for the round.
+    param num_x: number of black pieces
+    param num_o: number of white pieces
+    return: statement declaring a winnter
+    """
+    if num_x > num_o:
+       print("X won!")
+    else:
+	print("O won!")
+	
+if __name__ == "__main__":
+   input_board = input('enter a board: ')
+   # test samples
+   
+   with open(input_board, "r") as board: 
+   #use with function to get the actual board
+   
+   #then you gotta color the board, then check the colors, count the total, then display the winner
+   color_board(spot_in_board)
+   clear_space(spot_in_board, input_board)
+   counting_total(spot_in_board, input_board)
+   display_score(num_x, num_o)
+
+# my parameters are definitly incorrect,,, not super sure about my first 2 functions 

@@ -1,0 +1,68 @@
+"""
+File: design2.txt
+Author: Sumaa SAyed
+Date: 10/30/2019
+Section: 16
+E-mail: ssayed1@umbc.edu
+Description: This program will simulate the pencil game, Sim. 
+"""
+CONSTANTS GO HERE HECK YEAAAA
+
+def pick_symbol():
+"""
+A function that allows the players to chose their character. 
+:param
+:return
+"""
+	player_1_symbol = input('Hello, what character would player 1 like to use? ')
+	player_2_symbol = input('Hello, what character would player 2 like to use? ')
+	
+def valid_symbol():
+"""
+A function that checks that if the 2 players have the same character.
+:param
+:return
+"""
+
+from proj2_ui import print_board
+def print_board(p1_lines, p1_character, p2_lines, p2_character):
+    """
+    Renders a game board and prints it to terminal
+    :param p1_lines: lines for play yer one e.g. [[1, 3], [2, 6], [5, 3]]
+    :param p1_character: the character that the lines will render with for player one
+    :param p2_lines: lines for player two e.g. [[1, 3], [2, 6], [5, 3]]
+    :param p2_character: the character that the lines will render with for player two
+    :return: None
+    """
+
+def prompt_for_move():
+    """
+    A function that prompts the user for a move.
+    :param
+    :return
+    """
+
+def input_move():
+"""
+A function that allows the player to make a move.
+:param
+:return
+"""
+
+def turn_control_swap():
+"""
+A function that switches the symbol, after a player has made a move.
+:param
+:return
+"""
+
+def valid_move():
+"""
+A function that blah
+:param
+:return
+"""
+
+if __name__ == "__main__":
+
+~~~~~ smeep 

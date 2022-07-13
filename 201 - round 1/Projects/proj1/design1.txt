@@ -1,0 +1,95 @@
+"""
+File: design1.txt
+Author: Sumaa Sayed
+Date: 10/15/2019
+Section: 16
+E-mail:  ssayed1@umbc.edu
+Description: This program will allow the user to play a baking simulator, and the user must stay within the budget. If they stay within the budget, they move on to baking the items. If not, they get a message. 
+"""
+
+STARTING_PRICE = 80.0
+FLOUR_COST_PER_BAG = 2.5
+EGGS_COST_PER_CRATE = 1.9
+YEAST_COST_PER_BAGS = 3.25
+BUTTER_COST_PER_PACK = 1.25
+MILK_COST_PER_JUG = 2.75
+GALLONS_MILK_PER_JUG = 1.0
+EGGS_PER_CRATE = 24.0
+TBSP_BUTTER_PER_PACK = 64.0
+CUPS_FLOUR_PER_BAG = 25.0
+CUP_YEAST_PER_BAG = 6.0
+FLOUR_REQUIRED = 48.0 + 112.5
+EGGS_REQUIRED = 12.0 + 60.0
+BUTTER_REQUIRED = 144.0
+YEAST_REQUIRED = 39 + 50
+MILK_REQUIRED = 18.0
+CUPS_IN_GALLON = 16
+TSP_IN_CUP = 48
+
+[added more constants, but may possibly need more, will figure it out while actually coding yaknow] 
+FLOUR_FOR_CROISSANTS = 48.0
+EGGS_PER_CROISSANTS = 12.0
+BUTTER_PER_CROISSANTS = 144.0
+YEAST_PER_CROISSANTS = 39.0
+CUPS_MILK_PER_CROISSANT = 18.0
+EGGS_PER_MACARONS = 60.0
+FLOUR_PER_BAGUETTES = 112.5
+YEAST_PER_BAGUETTES = 50.0
+CRATES_OF_EGGS = 5.0
+BAGS_OF_FLOUR = 7.0
+PACKS_OF_BUTTER = 5.0
+BAGS_OF_YEAST = 5.0
+JUGS_OF_MILK = 5.0
+
+def go_shopping():
+    """
+    A function to go shopping and will print what the user needs to buy, with the given $80.
+    :return: the items bought from the store/shopping trip
+    """
+
+def check_items_enough(shopping_cart):
+    """
+    A function to check if there are enough items in the shopping cart
+    :param shopping_cart: the items in the cart/ needed in the cart
+    :return: the items that are in the cart
+    """
+
+def print_task_list(tasks_remaining):
+    """
+    A fucntion that prints the tasks remaining. Baguettes should be completed first. (a more specific order is in the sample doc, but it should be baguettes, then croissants and then whatever else i think???)
+    :param tasks_remaining: tasks that have not been completed
+    :return: nothing 
+    """
+
+def is_valid_input(index, tasks):
+    """
+    A function that will check if the input was valid, given the list of tasks.
+    :param index: number that is inputted
+    :param tasks: tasks that are left to do, starting with 1
+    :return: possibly an error saying if the number is too large or small, depending on user input
+    """
+
+def bake():
+    """
+    A function that prints the tasks left and checks to see if the tasks are completed in order.
+    :return: if the products were baked in the correct order, then the program will printout a statement saying that every task was completed... if the items were baked incorrectly, a message will prin out, pushing the user to make baguettes.
+    """
+
+
+if __name__ == '__main__':
+   start off by printing out the "baker! you gotta buy the ingredients with a budget of $80!" (go_shopping)
+   then, welcome the user to the supermarket!
+
+   use while != NOTHING loop to have the user purchase the ingredients (eggs, flour, butter, yeast, milk)
+   - when the user inputs nothing (use if/for thingy), move on to the next chunk of code // (check_items_enough(shopping_cart) - make sure the user bought enough items + didn't overspend the $80, if so, then print out statements, letting them know)
+
+   if/once the user has all the ingredients needed (+ didn't go over the budget and bought enough items) then the tasks for the day will be printed out
+   (print_task_list(tasks_remaining))
+   # math is involved for this chunk (add, subtract, multiply, divide)
+
+# for the above 2 chunks, make sure to use is_valid_input(index, tasks)
+
+   the program will ask the user about what taask they would like to complete (the user should do the baguettes first, but can choose another option, and then be rerouted to do the baguettes!)
+       - for each task, a specific statement will be printed out when they select that task
+
+   once all the tasks are completed in the correct order (once again use that check function thing) then the program will let the user know by pritning a cheesy statement

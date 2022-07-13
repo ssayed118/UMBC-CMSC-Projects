@@ -1,0 +1,23 @@
+colored board:
+
+++++++++
+++++++++
+++++++++
+OOOOOOOO
+XXXXXXXX
+++++++++
+++++++++
+++++++++
+
+output:
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+OOOOOOOO
+XXXXXXXX
+XXXXXXXX
+XXXXXXXX
+XXXXXXXX
+
+36 ~ white
+36 ~ black

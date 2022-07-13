@@ -1,0 +1,73 @@
+"""
+File: design2.txt
+Author: Sumaa Sayed
+Date: 10/30/2019
+Section: 16
+E-mail: ssayed1@umbc.edu
+Description: This program will simulate the pencil game, Sim. 
+"""
+# there’s a really good chance that some of my parameter names might change, mainly because i’m really bad with naming them
+#also, whenever I say symbol or character, I’m talking about the character that the user inputs… apologies if that’s confusing!
+# for now, i'm not putting any constants, becuse i'm not entirely sure what will stay constant besides the users characters... and not too sure how to make that a constant
+
+def pick_symbol(input_symbol):
+"""
+A function that allows the players to chose their character. 
+:param input_symbol: symbols that the players input
+:return the symbols/character chosen
+"""
+	player_1_symbol = input('Hello, what character would player 1 like to use? ')
+	player_2_symbol = input('Hello, what character would player 2 like to use? ')
+	
+def valid_symbol(valid):
+"""
+A function that checks that if the 2 players have the same character.
+:param valid: inputs are valid characters
+:return if valid, None // if invalid, ask the user to pick another character (something along the lines of that..)
+"""
+
+from proj2_ui import print_board
+def print_board(p1_lines, p1_character, p2_lines, p2_character):
+    """
+    Renders a game board and prints it to terminal
+    :param p1_lines: lines for play yer one e.g. [[1, 3], [2, 6], [5, 3]]
+    :param p1_character: the character that the lines will render with for player one
+    :param p2_lines: lines for player two e.g. [[1, 3], [2, 6], [5, 3]]
+    :param p2_character: the character that the lines will render with for player two
+    :return: None
+    """
+
+def prompt_for_move(make_move):
+    """
+    A function that prompts the user for a move.
+    :param make_move: getting the correct user to make a move  
+    :return None:
+    """
+
+def input_move(print_move):
+    """
+    A function that allows the player to make a move.
+    :param print_move: getting the correct users character/symbol to print
+    :return None:
+    """
+
+def turn_control_swap(switch_character):
+    """
+    A function that switches the symbol, after a player has made a move.
+    :param switch_character: should switch the symbol whichever player is aboutto make a move
+    :return None or correct symbol/character: (#not super sure right now)
+    """
+
+def valid_move(valid_movement):
+    """
+    A function that checks to see if the move made by the player was valid.
+    :param valid_movement: move must be valid (needs to touch 3 points) 
+    :return error if move made was invalid/taken already
+    """
+
+if __name__ == "__main__":
+
+#ask each player what character they want (validate it)
+#print board
+#have each player take turns at the computer and play the game
+#first person to make a (proper) triangle loses
