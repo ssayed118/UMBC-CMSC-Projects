@@ -1,0 +1,15 @@
+;Sumaa Sayed - ssayed1@umbc.edu - CMSC331 - Homework 4
+
+#lang racket
+(require racket/trace)
+(define record '(("Course" "Credits" "Grade")
+                 ("CMSC 299" 2 "P")
+                 ("CMSC 331" 3 87)
+                 ("CMSC 341" 3 100)
+                 ("CHEM 201" 4 "Incomplete")
+                 ("PHYS 201" 4 77)
+                 ("CMSC 491" "error" 100)))
+
+#|Implement your functions here|#
+
+(gpa record)

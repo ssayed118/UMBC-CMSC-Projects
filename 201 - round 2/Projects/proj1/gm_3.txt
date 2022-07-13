@@ -1,0 +1,33 @@
+The Dorms
+	Proxima Centauri, 400
+	Lalande 21185, 700
+	Barnard's Star, 1300
+Proxima Centauri
+	Wolf 359, 1200
+	Groombridge 34, 800
+	Procyon, 1200
+Lalande 21185
+	Barnard's Star, 3200
+	Wolf 359, 8125
+	Procyon, 809
+Barnard's Star
+	Luhman 16, 500000000
+	Lalande 21185, 32
+Procyon
+	Wolf 359, 8234
+	Groombridge 34, 5100
+	Teegarden's Star, 3333
+Wolf 359
+	ITE, 3400
+	Tau Ceti, 1234
+Groombridge 34
+	Teegarden's Star, 2200
+	ITE, 3400
+	Tau Ceti, 1281
+Luhman 16
+	Barnard's Star, 500000000
+Tau Ceti
+	ITE, 1500
+Teegarden's Star
+	ITE, 800
+ITE

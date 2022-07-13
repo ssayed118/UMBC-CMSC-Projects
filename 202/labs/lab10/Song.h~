@@ -1,0 +1,50 @@
+/**************                                                                
+* File: Song.h                                                              
+* Project: CMSC 202 Lab 10, Fall 2020                                          
+* Author: Sumaa Sayed                                                          
+* Date: 11/2/2020                                                             
+* Section: 20/25                                                               
+* E-mail: ssayed1@gl.umbc.edu                                                  
+* Header file for polymorphsim lab.
+ *************/
+
+#ifndef SONG_H
+#define SONG_H
+#include <iostream>
+using namespace std;
+
+//song class
+class Song{
+ public:
+  Song();
+  Song(string, string);
+  //artist + name 
+
+  virtual void Play(); //function to play song
+  virtual void Request(); //fucntion to request a song
+  virtual void Like(); //function to "like" a song
+  
+ protected:
+  string m_songName; //name on song
+  string m_artistName; //name of artist
+};
+
+//hiphop class
+class Hiphop : public Song{
+public:
+  Hiphop(string songName, string artistName);
+  void Play(); //see above comments for functions
+  void Request();
+  void Like();
+};
+
+//pop class
+class Pop : public Song{
+public:
+  Pop(string songName, string artistName);  
+  void Play(); //see above comments
+  void Request();
+  void Like();
+};
+  
+#endif

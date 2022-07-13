@@ -1,0 +1,45 @@
+//header goes here
+//file: Valorant.cpp
+//lab 6
+
+#include <iostream>
+#include <string>
+#include "Valorant.h" 
+
+using namespace std;
+
+Valorant::Valorant(){
+  m_name = " ";
+  m_HP = 0;
+  m_isDefender = true;
+}
+
+Valorant::Valorant(string setName, int setHP, bool setSide){
+  SetName(setName);
+  SetHP(setHP);
+  SetSide(setSide);
+}
+
+void Valorant::SetName(string toSet){
+  m_name = toSet;
+}
+
+void Valorant::SetHP(int hp){
+  m_HP = hp;
+}
+
+void Valorant::SetSide(bool toSet){
+  m_isDefender = toSet;
+}
+
+string Valorant::GetName(){
+  return m_name;
+}
+
+int Valorant::GetHP(){
+  return m_HP;
+}
+
+bool Valorant::GetSide(){
+  return m_isDefender;
+}

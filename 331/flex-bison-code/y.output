@@ -1,0 +1,228 @@
+Grammar
+
+    0 $accept: commands $end
+
+    1 commands: %empty
+    2         | commands command
+    3         | commands error
+
+    4 command: add_building
+    5        | get_building_status
+    6        | turn_off_on
+    7        | quit
+    8        | set_temperature
+
+    9 add_building: ADD BUILDING
+
+   10 get_building_status: STATUS BUILDING
+
+   11 turn_off_on: TURN BUILDING ONOFF
+
+   12 quit: QUIT
+
+   13 set_temperature: SET BUILDING NUMBER
+
+
+Terminals, with rules where they appear
+
+    $end (0) 0
+    error (256) 3
+    ADD (258) 9
+    STATUS (259) 10
+    TURN (260) 11
+    QUIT (261) 12
+    SET (262) 13
+    NUMBER <number> (263) 13
+    BUILDING <string> (264) 9 10 11 13
+    ONOFF <string> (265) 11
+
+
+Nonterminals, with rules where they appear
+
+    $accept (11)
+        on left: 0
+    commands (12)
+        on left: 1 2 3
+        on right: 0 2 3
+    command (13)
+        on left: 4 5 6 7 8
+        on right: 2
+    add_building (14)
+        on left: 9
+        on right: 4
+    get_building_status (15)
+        on left: 10
+        on right: 5
+    turn_off_on (16)
+        on left: 11
+        on right: 6
+    quit (17)
+        on left: 12
+        on right: 7
+    set_temperature (18)
+        on left: 13
+        on right: 8
+
+
+State 0
+
+    0 $accept: • commands $end
+
+    $default  reduce using rule 1 (commands)
+
+    commands  go to state 1
+
+
+State 1
+
+    0 $accept: commands • $end
+    2 commands: commands • command
+    3         | commands • error
+
+    $end    shift, and go to state 2
+    error   shift, and go to state 3
+    ADD     shift, and go to state 4
+    STATUS  shift, and go to state 5
+    TURN    shift, and go to state 6
+    QUIT    shift, and go to state 7
+    SET     shift, and go to state 8
+
+    command              go to state 9
+    add_building         go to state 10
+    get_building_status  go to state 11
+    turn_off_on          go to state 12
+    quit                 go to state 13
+    set_temperature      go to state 14
+
+
+State 2
+
+    0 $accept: commands $end •
+
+    $default  accept
+
+
+State 3
+
+    3 commands: commands error •
+
+    $default  reduce using rule 3 (commands)
+
+
+State 4
+
+    9 add_building: ADD • BUILDING
+
+    BUILDING  shift, and go to state 15
+
+
+State 5
+
+   10 get_building_status: STATUS • BUILDING
+
+    BUILDING  shift, and go to state 16
+
+
+State 6
+
+   11 turn_off_on: TURN • BUILDING ONOFF
+
+    BUILDING  shift, and go to state 17
+
+
+State 7
+
+   12 quit: QUIT •
+
+    $default  reduce using rule 12 (quit)
+
+
+State 8
+
+   13 set_temperature: SET • BUILDING NUMBER
+
+    BUILDING  shift, and go to state 18
+
+
+State 9
+
+    2 commands: commands command •
+
+    $default  reduce using rule 2 (commands)
+
+
+State 10
+
+    4 command: add_building •
+
+    $default  reduce using rule 4 (command)
+
+
+State 11
+
+    5 command: get_building_status •
+
+    $default  reduce using rule 5 (command)
+
+
+State 12
+
+    6 command: turn_off_on •
+
+    $default  reduce using rule 6 (command)
+
+
+State 13
+
+    7 command: quit •
+
+    $default  reduce using rule 7 (command)
+
+
+State 14
+
+    8 command: set_temperature •
+
+    $default  reduce using rule 8 (command)
+
+
+State 15
+
+    9 add_building: ADD BUILDING •
+
+    $default  reduce using rule 9 (add_building)
+
+
+State 16
+
+   10 get_building_status: STATUS BUILDING •
+
+    $default  reduce using rule 10 (get_building_status)
+
+
+State 17
+
+   11 turn_off_on: TURN BUILDING • ONOFF
+
+    ONOFF  shift, and go to state 19
+
+
+State 18
+
+   13 set_temperature: SET BUILDING • NUMBER
+
+    NUMBER  shift, and go to state 20
+
+
+State 19
+
+   11 turn_off_on: TURN BUILDING ONOFF •
+
+    $default  reduce using rule 11 (turn_off_on)
+
+
+State 20
+
+   13 set_temperature: SET BUILDING NUMBER •
+
+    $default  reduce using rule 13 (set_temperature)

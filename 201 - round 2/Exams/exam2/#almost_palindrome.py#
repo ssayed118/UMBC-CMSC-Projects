@@ -1,0 +1,38 @@
+"""
+File: almost_palindrome.py
+Author: Sumaa Sayed
+Date: 4/17/20
+Section: 16
+Email: ssayed1@umbc.edu
+Description: 
+"""
+
+def almost_palindrome(the_string, num_errors):
+    #base case
+    if len(the_string) <= 1 and num_errors == 0:
+        return True
+    elif:
+        return False
+        
+    #recursive case
+    else: 
+        if the_string[0] == the_string[-1]:
+            return almost_palindrome(the_string[1: -1], num_errors)
+        
+        num_errors += 1
+        return almost_palindrome(the_string[1: -1], num_errors)
+
+
+if __name__ == "__main__":
+    
+# the_string = str(input('Enter a string: '))
+ #the_string = "".join(the_string.split()).lower()   
+  #  num_errors = int(input('guess how many errors: '))
+    #print(almost_palindrome(the_string, num_errors))
+
+    print(almost_palindrome("aepplopea", 2)) #true
+    print(almost_palindrome("mom", 4)) # true
+    print(almost_palindrome("tacocat", -1)) #false
+    print(almost_palindrome("abcdcba", 3 )) #true
+    print(almost_palindrome("abcdcab", 1))#false
+         

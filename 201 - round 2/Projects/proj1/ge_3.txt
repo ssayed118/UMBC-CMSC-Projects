@@ -1,0 +1,6 @@
+Barnard's Star,Project Daedalus reaches the star system.,You refuel based on deuterium stockpiles in the system.,You're out of He-3 and get stuck., 1, 7, 300
+Wolf 359,The borg show up.,You tell the hive mind to sleep.,You are assimilated.,6,2,40000
+Groombridge 34,You reach Outpost 63.,You make the Kessel run in under 12 parsecs (what?).,You get sucked into a wormhole and dumped out lightyears off course., 7, 3, 1200
+Luhman 16,You are at a dead end,You do not pass,You do not pass, 11, 11, 500000000
+Tau Ceti,You find intelligent life.,They are friendly and help you on your way.,They are hostile and capture you., 3, 5, 500
+Teegarden's Star,We have a garden party.,We drink Earl Grey tea.,The pastries are burnt.,1,5,200

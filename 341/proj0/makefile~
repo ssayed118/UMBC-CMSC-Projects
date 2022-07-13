@@ -1,0 +1,12 @@
+CXX = g++
+CXXFLAGS = -Wall
+OBJECTS = puzzle.o
+
+puzzle.o: $(OBJECTS) puzzle.cpp puzzle.h
+	$(CXX) $(CXXFLAGS) $(OBJECTS) puzzle.cpp -o puzzle
+
+clean:
+    rm *.o*
+    rm *~ 
+
+run:

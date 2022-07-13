@@ -1,0 +1,19 @@
+//Zombie.cpp
+#include "Zombie.h"
+#include "Entity.h"
+#include <iostream>
+using namespace std;
+
+Zombie::Zombie(string name, int health)
+ :Entity(name, health){
+}
+
+int Zombie::Attack(){
+  cout << GetName() << " deals 1 point of damage" << endl;
+  return 1;
+}
+
+int Zombie::SpecialAttack(){
+  cout << GetName() << " performs a special attack." << endl;
+  return 0;
+}

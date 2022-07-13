@@ -1,0 +1,49 @@
+//entity.cpp
+#include "Entity.h"
+#include <iostream>
+using namespace std;
+
+Entity::Entity(){
+  m_name = " ";
+  m_health = 0;
+}
+
+Entity::Entity(string name, int health){
+  m_name = name;
+  m_health = health;
+}
+
+Entity::~Entity(){
+} 
+
+string Entity::GetName(){
+  return m_name;
+}
+
+int Entity::GetHealth(){
+  return m_health;
+}
+
+void Entity::SetName(string name){
+  m_name = name;
+}
+
+void Entity::SetHealth(int health){
+  m_health = health;
+}
+
+int Entity::Attack(){
+  cout << "Entity has an attack damage of 0" << endl;
+  return 0;
+}
+
+int Entity::SpecialAttack(){
+  cout << "Entity has an special attack damage of 0" << endl;
+  return 0;
+}
+
+ostream& operator<<(ostream& out, Entity& creature){
+  out << creature.m_name << endl;
+  out << creature.m_health << endl;
+  return out;
+}
